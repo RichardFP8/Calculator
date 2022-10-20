@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My work</title>
+        <style>
+            li > input {
+                width: 4rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!--it just feels weird to not have a <div>... -->
+        <div>
+            <form style="border: 0.1em solid black; max-width: 24em; margin: 1rem auto;">
+                <p>Number 1:&emsp;<input type="text" id="number1" /></p>
+                <p>Number 2:&emsp;<input type="text" id="number2" /></p>
+                <!--bit space, not alot;... I was playing around and I got what I wanted; exquisuite -->
+                <ul style="display: flex;list-style-type: none; column-gap: 1em;">
+                    <li><input type="button" id="add" value="Add"  /></li>
+                    <li ><input type="button" id="minus" value="Subtract" /></li>
+                    <li><input type="button" id="multiply" value="Mulitply" /></li>
+                    <li><input type="button" id="divide" value="Divide" /></li>
+                </ul>
+
+                <p>Answer:&emsp;<input type="text" id="answer" readonly/></p
+            </form>
+        </div>
+
+
+        <script src="./scripts/index.js" ></script>
+    </body>
+</html>
